@@ -1,9 +1,10 @@
 import express from 'express';
+import { dev } from './doc/dev';
 
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  res.send(dev.a)
 })
 
 app.listen(3000, function () {
